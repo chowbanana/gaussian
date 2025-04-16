@@ -1,0 +1,312 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/MentorGraphics/modeltech64_2020.1/examples
+T_opt
+!s110 1744272257
+VkcKHF]3FZQkHK`i0d[0>E0
+04 8 4 work regstest fast 0
+=1-089204d4e93c-67f77b80-357-44a4
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.1;71
+R0
+T_opt1
+!s110 1744709235
+V3jEQLRXC]RUD=cmb:l9_U1
+04 18 4 work picoMIPS4test_test fast 0
+=1-089204d4e93c-67fe2673-17e-1134
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1744709594
+V8mUM172]WM^i][fV<hfi03
+04 11 4 work countertest fast 0
+=6-089204d4e93c-67fe27da-13c-45bc
+R1
+R2
+n@_opt2
+R3
+valu
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1744360737
+!i10b 1
+!s100 3Y9Po36JdZZcQ:G[nmKNR2
+Z5 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IF80NSLM[_[jKIbldhgHOd0
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z7 dC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim
+w1744360732
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alu.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alu.sv
+!i122 544
+L0 10 77
+Z8 OL;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1744360737.000000
+!s107 alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alu.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alu.sv|
+!i113 0
+Z9 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+valutest
+R4
+Z10 !s110 1744360718
+!i10b 1
+!s100 :dcHIIke7fP]gC_;@YZJA3
+R5
+I5Fm0dAU[aTSLEYJJP`hTn0
+R6
+S1
+R7
+w1744032243
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alutest.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alutest.sv
+!i122 538
+L0 9 43
+R8
+r1
+!s85 0
+31
+Z11 !s108 1744360718.000000
+!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alutest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alutest.sv|
+!i113 0
+R9
+R2
+vcounter
+R4
+Z12 !s110 1744709219
+!i10b 1
+!s100 JZl8EZi]AKJVB_X;_8zGl0
+R5
+I=X5aK?loa5FaZzc@odUWn0
+R6
+S1
+R7
+w1744708467
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv
+!i122 555
+L0 2 14
+R8
+r1
+!s85 0
+31
+Z13 !s108 1744709219.000000
+!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv|
+!i113 0
+R9
+R2
+vcountertest
+R4
+!s110 1744709590
+!i10b 1
+!s100 0>`olQab_YEBLO_^Jg;@B1
+R5
+IMI<CaJDjOzfZDL0:JicBk3
+R6
+S1
+R7
+w1744709585
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/countertest.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/countertest.sv
+!i122 560
+L0 1 28
+R8
+r1
+!s85 0
+31
+!s108 1744709590.000000
+!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/countertest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/countertest.sv|
+!i113 0
+R9
+R2
+vcpu
+R4
+!s110 1744200980
+!i10b 1
+!s100 z2Cj2eN0lNgDd:J^;Kcj@2
+R5
+I::Jb2C]h<]B:6eEVfGehI1
+R6
+S1
+R7
+w1744193589
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv
+!i122 138
+L0 10 62
+R8
+r1
+!s85 0
+31
+!s108 1744200979.000000
+!s107 alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv|
+!i113 0
+R9
+R2
+vcputest
+R4
+Z14 !s110 1744360719
+!i10b 1
+!s100 ]z@gN[l3LEU7]<??82agj1
+R5
+I3oSWTcF]YX11k0NGa?Geo0
+R6
+S1
+R7
+w1744191405
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv
+!i122 540
+L0 9 23
+R8
+r1
+!s85 0
+31
+Z15 !s108 1744360719.000000
+!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv|
+!i113 0
+R9
+R2
+vdecoder
+R4
+!s110 1744666297
+!i10b 1
+!s100 m;jQSHFQXN1fk@AKBnzkC1
+R5
+I7Z4jWZo1`3;VNN9fcK3WL0
+R6
+S1
+R7
+w1744666293
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decoder.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decoder.sv
+!i122 554
+L0 12 107
+R8
+r1
+!s85 0
+31
+!s108 1744666297.000000
+!s107 opcodes.sv|alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decoder.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decoder.sv|
+!i113 0
+R9
+R2
+vdecodertest
+R4
+!s110 1744360717
+!i10b 1
+!s100 V9WdNVVJlCVGOPEHYWWMc0
+R5
+I^PV@mfifUg=458dE3D@jz2
+R6
+S1
+R7
+w1744039777
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decodertest.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decodertest.sv
+!i122 531
+L0 12 24
+R8
+r1
+!s85 0
+31
+!s108 1744360717.000000
+!s107 opcodes.sv|alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decodertest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decodertest.sv|
+!i113 0
+R9
+R2
+vpc
+R4
+R10
+!i10b 1
+!s100 SgPeeo=eA<Kl^g9fYGAYn0
+R5
+IWWj6R]YO6X8e[iPg]Be5C0
+R6
+S1
+R7
+w1744226744
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv
+!i122 532
+L0 8 23
+R8
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv|
+!i113 0
+R9
+R2
+vpctest
+R4
+R14
+!i10b 1
+!s100 gG9V3Qo[jjkS9g]2?399J3
+R5
+IY3i3SiE^P6=TfVaKP?J:K3
+R6
+S1
+R7
+w1744037047
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pctest.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pctest.sv
+!i122 539
+L0 9 37
+R8
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pctest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pctest.sv|
+!i113 0
+R9
+R2
+vpicoMIPS
+R4
+R14
+!i10b 1
+!s100 ]k6dUPfDMQGXNRfzgnY;C0
+R5
+IdTzk:dQ:8k;X5>eYcVik`1
+R6
+S1
+R7
+w1744360072
+8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS.sv
+FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS.sv
+!i122 542
+L0 10 71
+R8
+r1
+!s85 0
+31
+R15
+!s107 alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/

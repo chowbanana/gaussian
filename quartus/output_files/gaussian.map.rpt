@@ -1,0 +1,656 @@
+Analysis & Synthesis report for gaussian
+Tue Apr 15 11:04:36 2025
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: counter:c
+ 13. Parameter Settings for User Entity Instance: picoMIPS:myDesign
+ 14. Parameter Settings for User Entity Instance: picoMIPS:myDesign|pc:progCounter
+ 15. Parameter Settings for User Entity Instance: picoMIPS:myDesign|prog:progMemory
+ 16. Parameter Settings for User Entity Instance: picoMIPS:myDesign|regs:gpr
+ 17. Parameter Settings for User Entity Instance: picoMIPS:myDesign|alu:iu
+ 18. Parameter Settings for User Entity Instance: picoMIPS:myDesign|sample_wave:wave
+ 19. Port Connectivity Checks: "picoMIPS:myDesign|prog:progMemory"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++---------------------------------+----------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Apr 15 11:04:36 2025              ;
+; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Standard Edition ;
+; Revision Name                   ; gaussian                                           ;
+; Top-level Entity Name           ; picoMIPS4test                                      ;
+; Family                          ; Cyclone V                                          ;
+; Logic utilization (in ALMs)     ; N/A                                                ;
+; Total registers                 ; 120                                                ;
+; Total pins                      ; 19                                                 ;
+; Total virtual pins              ; 0                                                  ;
+; Total block memory bits         ; 0                                                  ;
+; Total DSP Blocks                ; 1                                                  ;
+; Total HSSI RX PCSs              ; 0                                                  ;
+; Total HSSI PMA RX Deserializers ; 0                                                  ;
+; Total HSSI TX PCSs              ; 0                                                  ;
+; Total HSSI PMA TX Serializers   ; 0                                                  ;
+; Total PLLs                      ; 0                                                  ;
+; Total DLLs                      ; 0                                                  ;
++---------------------------------+----------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; picoMIPS4test      ; gaussian           ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
++----------------------------------+-----------------+---------------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                                                ; Library ;
++----------------------------------+-----------------+---------------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; wave.hex                         ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/wave.hex         ;         ;
+; prog_main.hex                    ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/prog_main.hex    ;         ;
+; sample_wave.sv                   ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/sample_wave.sv   ;         ;
+; regs.sv                          ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/regs.sv          ;         ;
+; prog.sv                          ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/prog.sv          ;         ;
+; picoMIPS4test.sv                 ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS4test.sv ;         ;
+; picoMIPS.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv      ;         ;
+; pc.sv                            ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/pc.sv            ;         ;
+; opcodes.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/opcodes.sv       ;         ;
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/decoder.sv       ;         ;
+; counter.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/counter.sv       ;         ;
+; alucodes.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/alucodes.sv      ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/alu.sv           ;         ;
++----------------------------------+-----------------+---------------------------------------+-------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Estimate of Logic utilization (ALMs needed) ; 213                 ;
+;                                             ;                     ;
+; Combinational ALUT usage for logic          ; 303                 ;
+;     -- 7 input functions                    ; 0                   ;
+;     -- 6 input functions                    ; 114                 ;
+;     -- 5 input functions                    ; 82                  ;
+;     -- 4 input functions                    ; 37                  ;
+;     -- <=3 input functions                  ; 70                  ;
+;                                             ;                     ;
+; Dedicated logic registers                   ; 120                 ;
+;                                             ;                     ;
+; I/O pins                                    ; 19                  ;
+;                                             ;                     ;
+; Total DSP Blocks                            ; 1                   ;
+;                                             ;                     ;
+; Maximum fan-out node                        ; counter:c|count[25] ;
+; Maximum fan-out                             ; 95                  ;
+; Total fan-out                               ; 1827                ;
+; Average fan-out                             ; 3.95                ;
++---------------------------------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+---------------+--------------+
+; |picoMIPS4test             ; 303 (0)             ; 120 (0)                   ; 0                 ; 1          ; 19   ; 0            ; |picoMIPS4test                                    ; picoMIPS4test ; work         ;
+;    |counter:c|             ; 26 (26)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |picoMIPS4test|counter:c                          ; counter       ; work         ;
+;    |picoMIPS:myDesign|     ; 277 (64)            ; 94 (0)                    ; 0                 ; 1          ; 0    ; 0            ; |picoMIPS4test|picoMIPS:myDesign                  ; picoMIPS      ; work         ;
+;       |alu:iu|             ; 32 (32)             ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |picoMIPS4test|picoMIPS:myDesign|alu:iu           ; alu           ; work         ;
+;       |decoder:D|          ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |picoMIPS4test|picoMIPS:myDesign|decoder:D        ; decoder       ; work         ;
+;       |pc:progCounter|     ; 14 (14)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |picoMIPS4test|picoMIPS:myDesign|pc:progCounter   ; pc            ; work         ;
+;       |prog:progMemory|    ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |picoMIPS4test|picoMIPS:myDesign|prog:progMemory  ; prog          ; work         ;
+;       |regs:gpr|           ; 93 (93)             ; 88 (88)                   ; 0                 ; 0          ; 0    ; 0            ; |picoMIPS4test|picoMIPS:myDesign|regs:gpr         ; regs          ; work         ;
+;       |sample_wave:wave|   ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |picoMIPS4test|picoMIPS:myDesign|sample_wave:wave ; sample_wave   ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary ;
++-------------------------------+--------------+
+; Statistic                     ; Number Used  ;
++-------------------------------+--------------+
+; Independent 9x9               ; 1            ;
+; Total number of DSP blocks    ; 1            ;
+;                               ;              ;
+; Fixed Point Signed Multiplier ; 1            ;
++-------------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++-----------------------------------------+---------------------------------------------+
+; Register name                           ; Reason for Removal                          ;
++-----------------------------------------+---------------------------------------------+
+; picoMIPS:myDesign|regs:gpr|gpr~128      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~129      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~130      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~131      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~132      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~133      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~134      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~135      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~136      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~137      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~138      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~139      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~140      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~141      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~142      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~143      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~144      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~145      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~146      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~147      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~148      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~149      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~150      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~151      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~152      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~153      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~154      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~155      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~156      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~157      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~158      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~159      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~160      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~161      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~162      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~163      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~164      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~165      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~166      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~167      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~168      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~169      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~170      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~171      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~172      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~173      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~174      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~175      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~176      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~177      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~178      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~179      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~180      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~181      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~182      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~183      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~184      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~185      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~186      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~187      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~188      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~189      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~190      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~191      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~192      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~193      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~194      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~195      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~196      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~197      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~198      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~199      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~200      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~201      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~202      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~203      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~204      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~205      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~206      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~207      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~208      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~209      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~210      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~211      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~212      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~213      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~214      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~215      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~216      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~217      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~218      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~219      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~220      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~221      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~222      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~223      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~224      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~225      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~226      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~227      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~228      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~229      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~230      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~231      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~232      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~233      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~234      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~235      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~236      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~237      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~238      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~239      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~240      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~241      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~242      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~243      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~244      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~245      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~246      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~247      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~248      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~249      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~250      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~251      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~252      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~253      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~254      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~255      ; Lost fanout                                 ;
+; picoMIPS:myDesign|regs:gpr|gpr~88       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~96       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~104      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~112      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~120      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~97       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~105      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~113      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~89       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~121      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~90       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~98       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~106      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~114      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~122      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~99       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~107      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~115      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~91       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~123      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~92       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~100      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~108      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~116      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~124      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~101      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~109      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~117      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~93       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~125      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~94       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~102      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~110      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~118      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~126      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~103      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~111      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~119      ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~95       ; Stuck at GND due to stuck port clock_enable ;
+; picoMIPS:myDesign|regs:gpr|gpr~127      ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 168 ;                                             ;
++-----------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 120   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 6     ;
+; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 88    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |picoMIPS4test|picoMIPS:myDesign|pc:progCounter|PCout[5] ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |picoMIPS4test|picoMIPS:myDesign|alu:iu|Mux7             ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |picoMIPS4test|picoMIPS:myDesign|Alub[0]                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter:c ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; n              ; 26    ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: picoMIPS:myDesign ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; n              ; 8     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: picoMIPS:myDesign|pc:progCounter ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; Psize          ; 6     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: picoMIPS:myDesign|prog:progMemory ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; Psize          ; 6     ; Signed Integer                                        ;
+; Isize          ; 24    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: picoMIPS:myDesign|regs:gpr ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: picoMIPS:myDesign|alu:iu ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 8     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: picoMIPS:myDesign|sample_wave:wave ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; i_size         ; 8     ; Signed Integer                                         ;
+; width          ; 8     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "picoMIPS:myDesign|prog:progMemory"                                                                                       ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; I    ; Output ; Warning  ; Output or bidir port (25 bits) is wider than the port expression (24 bits) it drives; bit(s) "I[24..24]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 120                         ;
+;     CLR               ; 26                          ;
+;     CLR SLD           ; 6                           ;
+;     ENA               ; 88                          ;
+; arriav_lcell_comb     ; 303                         ;
+;     arith             ; 40                          ;
+;         1 data inputs ; 25                          ;
+;         2 data inputs ; 1                           ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 13                          ;
+;     normal            ; 263                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 36                          ;
+;         5 data inputs ; 69                          ;
+;         6 data inputs ; 114                         ;
+; arriav_mac            ; 1                           ;
+; boundary_port         ; 19                          ;
+;                       ;                             ;
+; Max LUT depth         ; 13.20                       ;
+; Average LUT depth     ; 9.49                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Standard Edition
+    Info: Processing started: Tue Apr 15 11:04:30 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gaussian -c gaussian
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file sample_wave.sv
+    Info (12023): Found entity 1: sample_wave File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/sample_wave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regstest.sv
+    Info (12023): Found entity 1: regstest File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/regstest.sv Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file regs.sv
+    Info (12023): Found entity 1: regs File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/regs.sv Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file prog.sv
+    Info (12023): Found entity 1: prog File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/prog.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file picomips4test.sv
+    Info (12023): Found entity 1: picoMIPS4test File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS4test.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file picomips.sv
+    Info (12023): Found entity 1: picoMIPS File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
+    Info (12023): Found entity 1: pc File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/pc.sv Line: 8
+Info (12021): Found 0 design units, including 0 entities, in source file opcodes.sv
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
+    Info (12023): Found entity 1: decoder File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/decoder.sv Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
+    Info (12023): Found entity 1: counter File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/counter.sv Line: 2
+Info (12021): Found 0 design units, including 0 entities, in source file alucodes.sv
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: alu File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/alu.sv Line: 10
+Warning (10222): Verilog HDL Parameter Declaration warning at picoMIPS.sv(31): Parameter Declaration in module "picoMIPS" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv Line: 31
+Warning (10222): Verilog HDL Parameter Declaration warning at picoMIPS.sv(35): Parameter Declaration in module "picoMIPS" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv Line: 35
+Info (12127): Elaborating entity "picoMIPS4test" for the top level hierarchy
+Info (12128): Elaborating entity "counter" for hierarchy "counter:c" File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS4test.sv Line: 11
+Warning (10230): Verilog HDL assignment warning at counter.sv(11): truncated value with size 32 to match size of target (26) File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/counter.sv Line: 11
+Info (12128): Elaborating entity "picoMIPS" for hierarchy "picoMIPS:myDesign" File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS4test.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at picoMIPS.sv(78): truncated value with size 32 to match size of target (8) File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv Line: 78
+Info (12128): Elaborating entity "pc" for hierarchy "picoMIPS:myDesign|pc:progCounter" File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv Line: 48
+Info (12128): Elaborating entity "prog" for hierarchy "picoMIPS:myDesign|prog:progMemory" File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv Line: 51
+Warning (10850): Verilog HDL warning at prog.sv(16): number of words (23) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/prog.sv Line: 16
+Warning (10030): Net "progMem.data_a" at prog.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/prog.sv Line: 12
+Warning (10030): Net "progMem.waddr_a" at prog.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/prog.sv Line: 12
+Warning (10030): Net "progMem.we_a" at prog.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/prog.sv Line: 12
+Info (12128): Elaborating entity "decoder" for hierarchy "picoMIPS:myDesign|decoder:D" File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv Line: 60
+Info (12128): Elaborating entity "regs" for hierarchy "picoMIPS:myDesign|regs:gpr" File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv Line: 66
+Info (12128): Elaborating entity "alu" for hierarchy "picoMIPS:myDesign|alu:iu" File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv Line: 70
+Warning (10270): Verilog HDL Case Statement warning at alu.sv(36): incomplete case statement has no default case item File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/alu.sv Line: 36
+Info (12128): Elaborating entity "sample_wave" for hierarchy "picoMIPS:myDesign|sample_wave:wave" File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/picoMIPS.sv Line: 72
+Warning (10030): Net "wave_mem.data_a" at sample_wave.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/sample_wave.sv Line: 6
+Warning (10030): Net "wave_mem.waddr_a" at sample_wave.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/sample_wave.sv Line: 6
+Warning (10030): Net "wave_mem.we_a" at sample_wave.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/sample_wave.sv Line: 6
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276007): RAM logic "picoMIPS:myDesign|sample_wave:wave|wave_mem" is uninferred due to asynchronous read logic File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/sample_wave.sv Line: 6
+    Info (276007): RAM logic "picoMIPS:myDesign|regs:gpr|gpr" is uninferred due to asynchronous read logic File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/regs.sv Line: 48
+    Info (276004): RAM logic "picoMIPS:myDesign|prog:progMemory|progMem" is uninferred due to inappropriate RAM size File: C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/prog.sv Line: 12
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/quartus/db/gaussian.ram0_prog_c2549942.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 128 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 411 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 391 logic cells
+    Info (21062): Implemented 1 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4892 megabytes
+    Info: Processing ended: Tue Apr 15 11:04:36 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:12
+
+
