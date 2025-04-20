@@ -1,9 +1,30 @@
-{C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/regs.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/regs.sv}
+C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module NISC4test
+
+Top level modules:
+	NISC4test
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regs.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regs.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module regs
+
+Top level modules:
+	regs
+
+} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/regs.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/regs.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 -- Compiling module regs
 
 Top level modules:
 	regs
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alu.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alu.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu
+
+Top level modules:
+	alu
 
 } {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alu.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alu.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
@@ -11,6 +32,13 @@ Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 
 Top level modules:
 	alu
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pctest.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pctest.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module pctest
+
+Top level modules:
+	pctest
 
 } {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pctest.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pctest.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
@@ -26,6 +54,9 @@ Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 Top level modules:
 	picoMIPS
 
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/opcodes.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/opcodes.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
 } {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/opcodes.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/opcodes.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 
@@ -36,6 +67,13 @@ Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 Top level modules:
 	decodertest
 
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test_test.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test_test.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module NISC4test_test
+
+Top level modules:
+	NISC4test_test
+
 } {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/countertest.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/countertest.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 -- Compiling module countertest
@@ -43,12 +81,40 @@ Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 Top level modules:
 	countertest
 
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/countertest.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/countertest.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module countertest
+
+Top level modules:
+	countertest
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/control_unit.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/control_unit.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module control_unit
+
+Top level modules:
+	control_unit
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regstest.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regstest.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module regstest
+
+Top level modules:
+	regstest
+
 } {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/regstest.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/regstest.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 -- Compiling module regstest
 
 Top level modules:
 	regstest
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alutest.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alutest.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alutest
+
+Top level modules:
+	alutest
 
 } {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alutest.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alutest.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
@@ -64,12 +130,33 @@ Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 Top level modules:
 	pc
 
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pc.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pc.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/sample_wave.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/sample_wave.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sample_wave
+
+Top level modules:
+	sample_wave
+
 } {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/sample_wave.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/sample_wave.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 -- Compiling module sample_wave
 
 Top level modules:
 	sample_wave
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module NISC
+
+Top level modules:
+	NISC
 
 } {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decoder.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decoder.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
@@ -85,26 +172,15 @@ Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 Top level modules:
 	picoMIPS4test_test
 
-} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv}
-Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
--- Compiling module counter
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/prog.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/prog.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module prog
 
 Top level modules:
-	counter
+	prog
 
-} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS4test.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS4test.sv}
+} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alucodes.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alucodes.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
--- Compiling module picoMIPS4test
-
-Top level modules:
-	picoMIPS4test
-
-} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv}
-Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
--- Compiling module cputest
-
-Top level modules:
-	cputest
 
 } {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/prog.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/prog.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
@@ -113,7 +189,42 @@ Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 Top level modules:
 	prog
 
-} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alucodes.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alucodes.sv}
+} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+-- Compiling module cputest
+
+Top level modules:
+	cputest
+
+} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS4test.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS4test.sv}
+Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+-- Compiling module picoMIPS4test
+
+Top level modules:
+	picoMIPS4test
+
+} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv}
+Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alucodes.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alucodes.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/counter.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/counter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/cputest.sv {1 {vlog -work work -sv -stats=none C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/cputest.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module cputest
+
+Top level modules:
+	cputest
 
 } {} {}}
