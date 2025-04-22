@@ -21,6 +21,7 @@ module regs #(parameter n = 8) // n - data bus width
 	// write process, dest reg is Raddr2
 	always_ff @ (posedge clk)
 	begin
+		gpr[6] <= switch_val;
 		if (Wdata_select)
 			gpr[rd] <= wave_val;
 		else if (w)
@@ -30,7 +31,6 @@ module regs #(parameter n = 8) // n - data bus width
 	// read process, output 0 if %0 is selected
 	always_comb
 		begin
-			gpr[6] = switch_val;
 			if (rs==3'd0)
 				rs_data =  {n{1'b0}};
 			else

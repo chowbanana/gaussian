@@ -15,6 +15,9 @@ end
 initial
 begin
     poll = 0;
+    n_reset = 1;
+
+    #100
     n_reset = 0;
 
     #100

@@ -40,6 +40,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "n_reset",
+					"strict" : false
+				},
+				{
+					"name" : "poll",
+					"strict" : false
+				},
+				{
 					"name" : "SW[1]",
 					"strict" : false
 				},
@@ -65,14 +73,6 @@
 				},
 				{
 					"name" : "SW[7]",
-					"strict" : false
-				},
-				{
-					"name" : "poll",
-					"strict" : false
-				},
-				{
-					"name" : "n_reset",
 					"strict" : false
 				},
 				{

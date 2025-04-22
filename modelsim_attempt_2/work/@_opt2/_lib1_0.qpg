@@ -1,7 +1,7 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.01, Jan 28 2020
+!s11f MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
@@ -10,150 +10,225 @@ z2
 cModel Technology
 Z0 dC:/MentorGraphics/modeltech64_2020.1/examples
 T_opt
-!s110 1744272257
-VkcKHF]3FZQkHK`i0d[0>E0
-04 8 4 work regstest fast 0
-=1-089204d4e93c-67f77b80-357-44a4
+!s110 1745315830
+VIi8lZiLMAA@ng02T3VY?I2
+04 14 4 work NISC4test_test fast 0
+=1-089204d4e93c-680767f6-20d-5e60
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;2020.1;71
 R0
 T_opt1
-!s110 1744709235
-V3jEQLRXC]RUD=cmb:l9_U1
+!s110 1744710440
+VLU1Sm7kIX;THIi^ikdP@P2
 04 18 4 work picoMIPS4test_test fast 0
-=1-089204d4e93c-67fe2673-17e-1134
+=2-089204d4e93c-67fe2b28-cd-5394
 R1
 R2
 n@_opt1
 R3
 R0
 T_opt2
-!s110 1744709594
-V8mUM172]WM^i][fV<hfi03
-04 11 4 work countertest fast 0
-=6-089204d4e93c-67fe27da-13c-45bc
+!s110 1745316366
+VNfOhcfL6^7hXRA@AVAWm20
+04 10 4 work branchtest fast 0
+=3-089204d4e93c-68076a0d-2f5-1194
 R1
 R2
 n@_opt2
 R3
 valu
 Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1744360737
+Z5 !s110 1745315001
 !i10b 1
-!s100 3Y9Po36JdZZcQ:G[nmKNR2
-Z5 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IF80NSLM[_[jKIbldhgHOd0
-Z6 VDg1SIo80bB@j0V0VzS_@n1
+!s100 QTh^a]E[g?EZW=K5zNON40
+Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IKXmiOnM5`nYfIMPZiDB0O1
+Z7 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z7 dC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim
-w1744360732
-8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alu.sv
-FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alu.sv
-!i122 544
-L0 10 77
-Z8 OL;L;2020.1;71
+Z8 dC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2
+Z9 w1745313630
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alu.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alu.sv
+!i122 738
+L0 10 39
+Z10 OL;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1744360737.000000
-!s107 alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alu.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alu.sv|
+Z11 !s108 1745315001.000000
+!s107 alucodes.sv|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alu.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alu.sv|
 !i113 0
-Z9 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 valutest
 R4
-Z10 !s110 1744360718
+R5
 !i10b 1
 !s100 :dcHIIke7fP]gC_;@YZJA3
-R5
-I5Fm0dAU[aTSLEYJJP`hTn0
 R6
-S1
+IS8CG9A@@1`TPEcMXT6W6o2
 R7
-w1744032243
-8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alutest.sv
-FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alutest.sv
-!i122 538
-L0 9 43
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alutest.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alutest.sv
+!i122 739
+L0 9 43
+R10
 r1
 !s85 0
 31
-Z11 !s108 1744360718.000000
-!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alutest.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alutest.sv|
+R11
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alutest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alutest.sv|
 !i113 0
-R9
+R12
+R2
+vbranch
+R4
+!s110 1745315244
+!i10b 1
+!s100 [WSCXn3jY=59CaK9N<f2Y3
+R6
+Iz<6:YNVH1T9<fiSG3Jd7g2
+R7
+S1
+R8
+w1745315238
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branch.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branch.sv
+!i122 752
+L0 1 7
+R10
+r1
+!s85 0
+31
+!s108 1745315244.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branch.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branch.sv|
+!i113 0
+R12
+R2
+vbranchtest
+R4
+!s110 1745316359
+!i10b 1
+!s100 ]KTc=WH:SF9RDS`DY^bO53
+R6
+IPOj25n7_zOM[T7_Z4>fYT3
+R7
+S1
+R8
+w1745316355
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branchtest.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branchtest.sv
+!i122 757
+L0 1 25
+R10
+r1
+!s85 0
+31
+!s108 1745316359.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branchtest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branchtest.sv|
+!i113 0
+R12
+R2
+vcontrol_unit
+R4
+!s110 1745315298
+!i10b 1
+!s100 99CmTQb4P666XP<;o:Ge?3
+R6
+IDUXcGb_;o[o2J:J`jb3Ao3
+R7
+S1
+R8
+w1745315274
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/control_unit.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/control_unit.sv
+!i122 753
+L0 1 46
+R10
+r1
+!s85 0
+31
+!s108 1745315298.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/control_unit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/control_unit.sv|
+!i113 0
+R12
 R2
 vcounter
 R4
-Z12 !s110 1744709219
+Z13 !s110 1745315002
 !i10b 1
-!s100 JZl8EZi]AKJVB_X;_8zGl0
-R5
-I=X5aK?loa5FaZzc@odUWn0
+!s100 0HiI;RbmUa4c:I`RD>S9[2
 R6
-S1
+ImOFl3]G4^i2nzEnD2gl011
 R7
-w1744708467
-8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv
-FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv
-!i122 555
-L0 2 14
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/counter.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/counter.sv
+!i122 740
+L0 2 14
+R10
 r1
 !s85 0
 31
-Z13 !s108 1744709219.000000
-!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv|
+R11
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/counter.sv|
 !i113 0
-R9
+R12
 R2
 vcountertest
 R4
-!s110 1744709590
+R13
 !i10b 1
-!s100 0>`olQab_YEBLO_^Jg;@B1
-R5
-IMI<CaJDjOzfZDL0:JicBk3
+!s100 kzVmoBOQ;BP4_D=?i:>2L3
 R6
-S1
+ISCX4@BCoC<@7P009MV39B0
 R7
-w1744709585
-8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/countertest.sv
-FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/countertest.sv
-!i122 560
-L0 1 28
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/countertest.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/countertest.sv
+!i122 741
+L0 1 28
+R10
 r1
 !s85 0
 31
-!s108 1744709590.000000
-!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/countertest.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/countertest.sv|
+Z14 !s108 1745315002.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/countertest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/countertest.sv|
 !i113 0
-R9
+R12
 R2
 vcpu
 R4
 !s110 1744200980
 !i10b 1
 !s100 z2Cj2eN0lNgDd:J^;Kcj@2
-R5
-I::Jb2C]h<]B:6eEVfGehI1
 R6
-S1
+I::Jb2C]h<]B:6eEVfGehI1
 R7
+S1
+dC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim
 w1744193589
 8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv
 FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv
 !i122 138
 L0 10 62
-R8
+R10
 r1
 !s85 0
 31
@@ -161,152 +236,144 @@ r1
 !s107 alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv|
 !i113 0
-R9
+R12
 R2
 vcputest
 R4
-Z14 !s110 1744360719
+R13
 !i10b 1
-!s100 ]z@gN[l3LEU7]<??82agj1
-R5
-I3oSWTcF]YX11k0NGa?Geo0
+!s100 IE`Fimc55@LRF0dbYLlg_0
 R6
-S1
+IES1?G4VokaONl10RT4K2O1
 R7
-w1744191405
-8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv
-FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv
-!i122 540
-L0 9 23
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/cputest.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/cputest.sv
+!i122 742
+L0 9 23
+R10
 r1
 !s85 0
 31
-Z15 !s108 1744360719.000000
-!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv|
+R14
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/cputest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/cputest.sv|
 !i113 0
-R9
+R12
 R2
 vdecoder
-R4
-!s110 1744666297
+Z15 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1745168448
 !i10b 1
-!s100 m;jQSHFQXN1fk@AKBnzkC1
-R5
-I7Z4jWZo1`3;VNN9fcK3WL0
+!s100 XWYamjYS3z2nDaA_OTVz]3
 R6
-S1
+IVDXFb6W2EeaWKRR>zB7cL1
 R7
-w1744666293
-8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decoder.sv
-FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decoder.sv
-!i122 554
-L0 12 107
-R8
+S1
+Z16 dC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2
+w1745168409
+8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decoder.sv
+FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decoder.sv
+!i122 673
+L0 12 94
+Z17 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1744666297.000000
-!s107 opcodes.sv|alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decoder.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decoder.sv|
-!i113 0
-R9
+!s108 1745168448.000000
+!s107 opcodes.sv|alucodes.sv|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decoder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decoder.sv|
+!i113 1
+Z18 o-work work -sv
 R2
 vdecodertest
-R4
-!s110 1744360717
+R15
+!s110 1745065101
 !i10b 1
 !s100 V9WdNVVJlCVGOPEHYWWMc0
-R5
-I^PV@mfifUg=458dE3D@jz2
 R6
-S1
+IYC6FcYfTNQJViWIHec:W@1
 R7
-w1744039777
-8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decodertest.sv
-FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decodertest.sv
-!i122 531
+S1
+R16
+w1745064213
+8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decodertest.sv
+FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decodertest.sv
+!i122 571
 L0 12 24
-R8
+R17
 r1
 !s85 0
 31
-!s108 1744360717.000000
-!s107 opcodes.sv|alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decodertest.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/decodertest.sv|
-!i113 0
-R9
+!s108 1745065101.000000
+!s107 opcodes.sv|alucodes.sv|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decodertest.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decodertest.sv|
+!i113 1
+R18
 R2
-vpc
+vNISC
 R4
+!s110 1745315035
+!i10b 1
+!s100 JET?Dmk4^^?6aJOJ=NaWU2
+R6
+Ic>PE_FPVDVjZM@;z=PnmS0
+R7
+S1
+R8
+w1745315018
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC.sv
+!i122 750
+L0 10 79
 R10
-!i10b 1
-!s100 SgPeeo=eA<Kl^g9fYGAYn0
-R5
-IWWj6R]YO6X8e[iPg]Be5C0
-R6
-S1
-R7
-w1744226744
-8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv
-FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv
-!i122 532
-L0 8 23
-R8
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv|
+!s108 1745315035.000000
+!s107 alucodes.sv|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC.sv|
 !i113 0
-R9
+R12
 R2
-vpctest
+n@n@i@s@c
+vNISC4test
 R4
-R14
+R13
 !i10b 1
-!s100 gG9V3Qo[jjkS9g]2?399J3
-R5
-IY3i3SiE^P6=TfVaKP?J:K3
+!s100 EZ3fg3VhA:@BA^WeScZe30
 R6
-S1
+I<9@L:iOc4IlOl]3>JF]hG3
 R7
-w1744037047
-8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pctest.sv
-FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pctest.sv
-!i122 539
-L0 9 37
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test.sv
+!i122 743
+Z19 L0 2 17
+R10
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pctest.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pctest.sv|
+R14
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test.sv|
 !i113 0
-R9
+R12
 R2
-vpicoMIPS
+n@n@i@s@c4test
+vNISC4test_test
 R4
-R14
+R13
 !i10b 1
-!s100 ]k6dUPfDMQGXNRfzgnY;C0
-R5
-IdTzk:dQ:8k;X5>eYcVik`1
+!s100 MC2oXof=4YG1CQFC88_b[1
 R6
-S1
+IF2XcF`>Iah?IVCSY5=Gal0
 R7
-w1744360072
-8C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS.sv
-FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS.sv
-!i122 542
-L0 10 71
+S1
 R8
-r1
-!s85 0
-31
-R15
-!s107 alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/
+R9
+8C:/Users/hwxt1c2

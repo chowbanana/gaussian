@@ -10,15 +10,14 @@ z2
 cModel Technology
 Z0 dC:/MentorGraphics/modeltech64_2020.1/examples
 T_opt
-!s110 1744272257
-VkcKHF]3FZQkHK`i0d[0>E0
-04 8 4 work regstest fast 0
-=1-089204d4e93c-67f77b80-357-44a4
+!s110 1745318324
+VGM>PS042BAS6D:OKEI6C93
+04 14 4 work NISC4test_test fast 0
+=8-089204d4e93c-680771b4-190-52f0
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;2020.1;71
-R0
 T_opt1
 !s110 1744710440
 VLU1Sm7kIX;THIi^ikdP@P2
@@ -30,148 +29,198 @@ n@_opt1
 R3
 R0
 T_opt2
-!s110 1744709594
-V8mUM172]WM^i][fV<hfi03
-04 11 4 work countertest fast 0
-=6-089204d4e93c-67fe27da-13c-45bc
+!s110 1745316366
+VNfOhcfL6^7hXRA@AVAWm20
+04 10 4 work branchtest fast 0
+=3-089204d4e93c-68076a0d-2f5-1194
 R1
 R2
 n@_opt2
 R3
 R0
 valu
-Z4 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1745278768
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1745315001
 !i10b 1
 !s100 QTh^a]E[g?EZW=K5zNON40
-Z5 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I5<35F@>V6XDoGh=;Nfh790
-Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IKXmiOnM5`nYfIMPZiDB0O1
+Z7 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z7 dC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2
-w1745278007
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alu.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alu.sv
-!i122 719
+Z8 dC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2
+Z9 w1745313630
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alu.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alu.sv
+!i122 738
 L0 10 39
-Z8 OV;L;2020.1;71
+Z10 OL;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1745278768.000000
-!s107 alucodes.sv|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alu.sv|
-!i113 1
-Z10 o-work work -sv
+Z11 !s108 1745315001.000000
+!s107 alucodes.sv|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alu.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alu.sv|
+!i113 0
+Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 valutest
 R4
-Z11 !s110 1745169957
+R5
 !i10b 1
 !s100 :dcHIIke7fP]gC_;@YZJA3
-R5
-I;DPUGg_EP9R9i:WPESYn70
 R6
-S1
+IS8CG9A@@1`TPEcMXT6W6o2
 R7
-Z12 w1745064213
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alutest.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alutest.sv
-!i122 690
-L0 9 43
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alutest.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alutest.sv
+!i122 739
+L0 9 43
+R10
 r1
 !s85 0
 31
-Z13 !s108 1745169957.000000
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alutest.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/alutest.sv|
-!i113 1
+R11
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alutest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/alutest.sv|
+!i113 0
+R12
+R2
+vbranch
+R4
+!s110 1745315244
+!i10b 1
+!s100 [WSCXn3jY=59CaK9N<f2Y3
+R6
+Iz<6:YNVH1T9<fiSG3Jd7g2
+R7
+S1
+R8
+w1745315238
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branch.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branch.sv
+!i122 752
+L0 1 7
 R10
+r1
+!s85 0
+31
+!s108 1745315244.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branch.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branch.sv|
+!i113 0
+R12
+R2
+vbranchtest
+R4
+!s110 1745316359
+!i10b 1
+!s100 ]KTc=WH:SF9RDS`DY^bO53
+R6
+IPOj25n7_zOM[T7_Z4>fYT3
+R7
+S1
+R8
+w1745316355
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branchtest.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branchtest.sv
+!i122 757
+L0 1 25
+R10
+r1
+!s85 0
+31
+!s108 1745316359.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branchtest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/branchtest.sv|
+!i113 0
+R12
 R2
 vcontrol_unit
 R4
-!s110 1745278769
+!s110 1745315298
 !i10b 1
-!s100 TAM8Pa@A[GUaT>6VhgNjR2
-R5
-I1UTFPVW@]1gT9QJPSN>1I3
+!s100 99CmTQb4P666XP<;o:Ge?3
 R6
-S1
+IDUXcGb_;o[o2J:J`jb3Ao3
 R7
-w1745278601
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/control_unit.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/control_unit.sv
-!i122 720
-L0 1 43
+S1
 R8
+w1745315274
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/control_unit.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/control_unit.sv
+!i122 753
+L0 1 46
+R10
 r1
 !s85 0
 31
-R9
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/control_unit.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/control_unit.sv|
-!i113 1
-R10
+!s108 1745315298.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/control_unit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/control_unit.sv|
+!i113 0
+R12
 R2
 vcounter
 R4
-R11
+!s110 1745318320
 !i10b 1
-!s100 0HiI;RbmUa4c:I`RD>S9[2
-R5
-IaYEXJQ9EKMUAVX>S=9K]k2
+!s100 _G9dX?e8z@dYhBcIQ`dRA0
 R6
-S1
+IGD]EnL7PRhYhe7eHAgkjz3
 R7
-w1745156626
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/counter.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/counter.sv
-!i122 691
-L0 2 14
+S1
 R8
+w1745318315
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/counter.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/counter.sv
+!i122 763
+L0 2 14
+R10
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/counter.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/counter.sv|
-!i113 1
-R10
+!s108 1745318320.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/counter.sv|
+!i113 0
+R12
 R2
 vcountertest
 R4
-R11
+Z13 !s110 1745315002
 !i10b 1
 !s100 kzVmoBOQ;BP4_D=?i:>2L3
-R5
-IcnRQXRTVM]E@]V[a]LjNT0
 R6
-S1
+ISCX4@BCoC<@7P009MV39B0
 R7
-w1745168212
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/countertest.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/countertest.sv
-!i122 692
-L0 1 28
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/countertest.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/countertest.sv
+!i122 741
+L0 1 28
+R10
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/countertest.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/countertest.sv|
-!i113 1
-R10
+Z14 !s108 1745315002.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/countertest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/countertest.sv|
+!i113 0
+R12
 R2
 vcpu
-DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R4
 !s110 1744200980
 !i10b 1
 !s100 z2Cj2eN0lNgDd:J^;Kcj@2
-R5
-I::Jb2C]h<]B:6eEVfGehI1
 R6
+I::Jb2C]h<]B:6eEVfGehI1
+R7
 S1
 dC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim
 w1744193589
@@ -179,7 +228,7 @@ w1744193589
 FC:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv
 !i122 138
 L0 10 62
-OL;L;2020.1;71
+R10
 r1
 !s85 0
 31
@@ -187,49 +236,49 @@ r1
 !s107 alucodes.sv|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cpu.sv|
 !i113 0
-o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R12
 R2
 vcputest
 R4
-R11
+R13
 !i10b 1
 !s100 IE`Fimc55@LRF0dbYLlg_0
-R5
-Ie4_W9RHL`I6zoiCQN^6:42
 R6
-S1
+IES1?G4VokaONl10RT4K2O1
 R7
-w1745168407
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/cputest.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/cputest.sv
-!i122 693
-L0 9 23
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/cputest.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/cputest.sv
+!i122 742
+L0 9 23
+R10
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/cputest.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/cputest.sv|
-!i113 1
-R10
+R14
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/cputest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/cputest.sv|
+!i113 0
+R12
 R2
 vdecoder
-R4
+Z15 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 !s110 1745168448
 !i10b 1
 !s100 XWYamjYS3z2nDaA_OTVz]3
-R5
-IVDXFb6W2EeaWKRR>zB7cL1
 R6
-S1
+IVDXFb6W2EeaWKRR>zB7cL1
 R7
+S1
+Z16 dC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2
 w1745168409
 8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decoder.sv
 FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decoder.sv
 !i122 673
 L0 12 94
-R8
+Z17 OV;L;2020.1;71
 r1
 !s85 0
 31
@@ -237,24 +286,24 @@ r1
 !s107 opcodes.sv|alucodes.sv|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decoder.sv|
 !i113 1
-R10
+Z18 o-work work -sv
 R2
 vdecodertest
-R4
+R15
 !s110 1745065101
 !i10b 1
 !s100 V9WdNVVJlCVGOPEHYWWMc0
-R5
-IYC6FcYfTNQJViWIHec:W@1
 R6
-S1
+IYC6FcYfTNQJViWIHec:W@1
 R7
-R12
+S1
+R16
+w1745064213
 8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decodertest.sv
 FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decodertest.sv
 !i122 571
 L0 12 24
-R8
+R17
 r1
 !s85 0
 31
@@ -262,152 +311,152 @@ r1
 !s107 opcodes.sv|alucodes.sv|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decodertest.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/decodertest.sv|
 !i113 1
-R10
+R18
 R2
 vNISC
 R4
-Z14 !s110 1745279894
+Z19 !s110 1745317749
 !i10b 1
-!s100 j5hbEZLge<_gnZXklK5A91
-R5
-IF<dXelFo1fMj:^=T8:JVl1
+!s100 JET?Dmk4^^?6aJOJ=NaWU2
 R6
-S1
+Ic>PE_FPVDVjZM@;z=PnmS0
 R7
-w1745279843
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC.sv
-!i122 723
-L0 10 75
+S1
 R8
+w1745317699
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC.sv
+!i122 760
+L0 10 79
+R10
 r1
 !s85 0
 31
-!s108 1745279894.000000
-!s107 alucodes.sv|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC.sv|
-!i113 1
-R10
+Z20 !s108 1745317749.000000
+!s107 alucodes.sv|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC.sv|
+!i113 0
+R12
 R2
 n@n@i@s@c
 vNISC4test
 R4
-!s110 1745169959
+R13
 !i10b 1
 !s100 EZ3fg3VhA:@BA^WeScZe30
-R5
-IS`^Uz`VGAz4Lho92ibz271
 R6
-S1
+I<9@L:iOc4IlOl]3>JF]hG3
 R7
-w1745168626
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test.sv
-!i122 702
-Z15 L0 2 17
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test.sv
+!i122 743
+Z21 L0 2 17
+R10
 r1
 !s85 0
 31
-Z16 !s108 1745169958.000000
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test.sv|
-!i113 1
-R10
+R14
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test.sv|
+!i113 0
+R12
 R2
 n@n@i@s@c4test
 vNISC4test_test
 R4
-Z17 !s110 1745169958
+!s110 1745318156
 !i10b 1
-!s100 MC2oXof=4YG1CQFC88_b[1
-R5
-IA=XzKCVgaE?;^8:gc;@7b2
+!s100 _DO>Z>_PdO`=l42RPfl7Y2
 R6
-S1
+IL0J?zDORBKL`217eCNAkY1
 R7
-w1745168668
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test_test.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test_test.sv
-!i122 701
-Z18 L0 1 51
+S1
 R8
+w1745318150
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test_test.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test_test.sv
+!i122 762
+L0 1 54
+R10
 r1
 !s85 0
 31
-R16
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test_test.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test_test.sv|
-!i113 1
-R10
+!s108 1745318156.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test_test.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/NISC4test_test.sv|
+!i113 0
+R12
 R2
 n@n@i@s@c4test_test
 vpc
 R4
-R11
+R19
 !i10b 1
-!s100 zdeE7_^e>[znjD_5E5AVo2
-R5
-IZZ8oV5a4D^5FWIVD_dc_80
+!s100 oobe<[SRK4^GoXY^^BZHT3
 R6
-S1
+IG42D2glB=@c<I^UjV8Q6A1
 R7
-w1745168397
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pc.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pc.sv
-!i122 694
-L0 8 23
+S1
 R8
+w1745317701
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/pc.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/pc.sv
+!i122 761
+L0 8 29
+R10
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pc.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pc.sv|
-!i113 1
-R10
+R20
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/pc.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/pc.sv|
+!i113 0
+R12
 R2
 vpctest
 R4
-R17
+Z22 !s110 1745315003
 !i10b 1
 !s100 Dc`C5D?cNzYh[5d5GLEiJ1
-R5
-IPL1H<UVC4nC9ij38zg97m0
 R6
-S1
+IKRUdg>C4nY8R<B?MlhFkF1
 R7
-w1745168400
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pctest.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pctest.sv
-!i122 695
-L0 9 37
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/pctest.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/pctest.sv
+!i122 745
+L0 9 37
+R10
 r1
 !s85 0
 31
-R16
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pctest.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/pctest.sv|
-!i113 1
-R10
+R14
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/pctest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/pctest.sv|
+!i113 0
+R12
 R2
 vpicoMIPS
-R4
+R15
 !s110 1745168546
 !i10b 1
 !s100 KfACaM>LXHbSYWNFBHJVI3
-R5
-IDoEPgme7gaj8^=FO8`Vh=1
 R6
-S1
+IDoEPgme7gaj8^=FO8`Vh=1
 R7
+S1
+R16
 w1745168480
 8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS.sv
 FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS.sv
 !i122 685
 L0 10 74
-R8
+R17
 r1
 !s85 0
 31
@@ -415,158 +464,158 @@ r1
 !s107 alucodes.sv|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS.sv|
 !i113 1
-R10
+R18
 R2
 npico@m@i@p@s
 vpicoMIPS4test
-R4
-Z19 !s110 1745168449
+R15
+Z23 !s110 1745168449
 !i10b 1
 !s100 5lgkC0Z`=fh9zIWAMnoaD0
-R5
-I>E<z7J4k:@a0]Z<AgYEIY0
 R6
-S1
+I>E<z7J4k:@a0]Z<AgYEIY0
 R7
+S1
+R16
 w1745156264
 8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS4test.sv
 FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS4test.sv
 !i122 677
-R15
-R8
+R21
+R17
 r1
 !s85 0
 31
-Z20 !s108 1745168449.000000
+Z24 !s108 1745168449.000000
 !s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS4test.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS4test.sv|
 !i113 1
-R10
+R18
 R2
 npico@m@i@p@s4test
 vpicoMIPS4test_test
-R4
-R19
+R15
+R23
 !i10b 1
 !s100 ce54K=Z:hz94DzHYm7kT]3
-R5
-IX[fa^I[HCFAe4SmZiN^>g2
 R6
-S1
+IX[fa^I[HCFAe4SmZiN^>g2
 R7
+S1
+R16
 w1745168436
 8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS4test_test.sv
 FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS4test_test.sv
 !i122 678
-R18
-R8
+L0 1 51
+R17
 r1
 !s85 0
 31
-R20
+R24
 !s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS4test_test.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/picoMIPS4test_test.sv|
 !i113 1
-R10
+R18
 R2
 npico@m@i@p@s4test_test
 vprog
 R4
-R14
+R22
 !i10b 1
 !s100 HRDMzE]e9oHg4dC9Ud:CD2
-R5
-I2FhI?7lLG4M;;9zWT=o042
 R6
-S1
+IGP9k@GY=@oi0Z40P1e6GM0
 R7
-w1745279850
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/prog.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/prog.sv
-!i122 722
-L0 7 16
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/prog.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/prog.sv
+!i122 746
+L0 7 16
+R10
 r1
 !s85 0
 31
-!s108 1745279893.000000
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/prog.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/prog.sv|
-!i113 1
-R10
+Z25 !s108 1745315003.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/prog.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/prog.sv|
+!i113 0
+R12
 R2
 vregs
 R4
-!s110 1745276709
+!s110 1745315824
 !i10b 1
-!s100 5l;e9k]e1`cR805>jNhh_2
-R5
-I?OobR[PBJPQLlkjmN[iCX1
+!s100 72XZQW3RO5?963EiPXOcW1
 R6
-S1
+I@F<R6KWF609Cb5`DLPo`W2
 R7
-w1745276699
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regs.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regs.sv
-!i122 715
-L0 9 38
+S1
 R8
+w1745315697
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/regs.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/regs.sv
+!i122 754
+L0 9 38
+R10
 r1
 !s85 0
 31
-!s108 1745276709.000000
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regs.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regs.sv|
-!i113 1
-R10
+!s108 1745315823.000000
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/regs.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/regs.sv|
+!i113 0
+R12
 R2
 vregstest
 R4
-R17
+R22
 !i10b 1
 !s100 KI=`FMG`aWzii<Dn0dQ7J2
-R5
-IE^Uhkha5k=b4HZ>TJI3Qa1
 R6
-S1
+IGcU:IP<^NT?=J<mWB086l1
 R7
-R12
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regstest.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regstest.sv
-!i122 698
-L0 9 39
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/regstest.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/regstest.sv
+!i122 748
+L0 9 39
+R10
 r1
 !s85 0
 31
-R16
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regstest.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/regstest.sv|
-!i113 1
-R10
+R25
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/regstest.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/regstest.sv|
+!i113 0
+R12
 R2
 vsample_wave
 R4
-R17
+R22
 !i10b 1
 !s100 P]U>WBfa7:KMi4zK=Fb;j2
-R5
-Io7^RQ4mAKOcmC:>Dm9fPa1
 R6
-S1
+I@C6L:VoBDj@deIek=4Tao3
 R7
-R12
-8C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/sample_wave.sv
-FC:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/sample_wave.sv
-!i122 699
-L0 1 14
+S1
 R8
+R9
+8C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/sample_wave.sv
+FC:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/sample_wave.sv
+!i122 749
+L0 1 14
+R10
 r1
 !s85 0
 31
-R16
-!s107 C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/sample_wave.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/sample_wave.sv|
-!i113 1
-R10
+R25
+!s107 C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/sample_wave.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/hwxt1c20/Downloads/gaussian/modelsim_attempt_2/sample_wave.sv|
+!i113 0
+R12
 R2

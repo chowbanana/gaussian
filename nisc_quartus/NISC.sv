@@ -37,25 +37,29 @@ logic [7:0] wave_val;
 
 //! LED
 logic LED_status;
+logic beq, is_branch;
 
 //------------- code starts here ---------
 // module instantiations
-pc  #(.Psize(Psize)) progCounter (.clk(clk),.n_reset(n_reset),
+pc  #(.Psize(Psize)) progCounter (.clk(clk),.n_reset(n_reset), .beq(beq),
         .PCincr(PCincr),
         .PCabsbranch(PCabsbranch),
         .Branchaddr(I[Psize-1:0]), 
         .PCout(ProgAddress) );
 
+branch b (.a(poll), .b(I[Isize-3]), .is_branch(is_branch), .beq(beq));
+
 prog #(.Psize(Psize),.Isize(Isize)) 
         progMemory (.address(ProgAddress),.I(I));
 
-control_unit c  (.branch_condition(I[Isize-3]),
+control_unit c  (//.branch_condition(I[Isize-3]),
                 .poll(poll),
                 .microinstruction(I[Isize-1:Isize-7]),
                 .PCincr(PCincr),
                 .PCabsbranch(PCabsbranch),
                 .ALUfunc(ALUfunc),
                 .imm(imm),
+                .is_branch(is_branch),
                 .Wdata_select(Wdata_select),
                 .w_or_LED(w_or_LED));
 
