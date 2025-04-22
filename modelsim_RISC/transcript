@@ -1,5 +1,12 @@
-# 0 compiles, 18 failed with no errors.
-# Error opening C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv
-# Path name 'C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv' doesn't exist.
-# Error opening C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv
-# Path name 'C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/pc.sv' doesn't exist.
+vsim work.countertest
+# vsim work.countertest 
+# Start time: 07:45:28 on Apr 22,2025
+# Refreshing C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_RISC/work.countertest
+# ** Error (suppressible): (vlog-12110) The -novopt option has no effect on this product. -novopt option is now deprecated and will be removed in future releases.
+# ** Error: vlog failed.
+# subinvocation of vlog failed; return status = 1.
+# ** Error: (vsim-3171) Could not find machine code for 'C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_RISC/work.countertest'.
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 07:45:29 on Apr 22,2025, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 1

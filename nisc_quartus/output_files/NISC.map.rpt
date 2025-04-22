@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NISC
-Mon Apr 21 01:39:46 2025
+Tue Apr 22 08:12:54 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,19 +14,18 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: counter:c
- 13. Parameter Settings for User Entity Instance: NISC:myDesign
- 14. Parameter Settings for User Entity Instance: NISC:myDesign|pc:progCounter
- 15. Parameter Settings for User Entity Instance: NISC:myDesign|prog:progMemory
- 16. Parameter Settings for User Entity Instance: NISC:myDesign|regs:gpr
- 17. Parameter Settings for User Entity Instance: NISC:myDesign|alu:iu
- 18. Parameter Settings for User Entity Instance: NISC:myDesign|sample_wave:wave
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: counter:c
+ 12. Parameter Settings for User Entity Instance: NISC:myDesign
+ 13. Parameter Settings for User Entity Instance: NISC:myDesign|pc:progCounter
+ 14. Parameter Settings for User Entity Instance: NISC:myDesign|prog:progMemory
+ 15. Parameter Settings for User Entity Instance: NISC:myDesign|regs:gpr
+ 16. Parameter Settings for User Entity Instance: NISC:myDesign|alu:iu
+ 17. Parameter Settings for User Entity Instance: NISC:myDesign|sample_wave:wave
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -53,13 +52,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Apr 21 01:39:46 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Apr 22 08:12:54 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; NISC                                        ;
 ; Top-level Entity Name           ; NISC4test                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 80                                          ;
+; Total registers                 ; 54                                          ;
 ; Total pins                      ; 19                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -78,7 +77,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; NISC4test          ; NISC               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -197,31 +196,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+---------------------------------------+-------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                       ;
-+---------------------------------------------+---------------------+
-; Resource                                    ; Usage               ;
-+---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 154                 ;
-;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 208                 ;
-;     -- 7 input functions                    ; 23                  ;
-;     -- 6 input functions                    ; 72                  ;
-;     -- 5 input functions                    ; 57                  ;
-;     -- 4 input functions                    ; 23                  ;
-;     -- <=3 input functions                  ; 33                  ;
-;                                             ;                     ;
-; Dedicated logic registers                   ; 80                  ;
-;                                             ;                     ;
-; I/O pins                                    ; 19                  ;
-;                                             ;                     ;
-; Total DSP Blocks                            ; 1                   ;
-;                                             ;                     ;
-; Maximum fan-out node                        ; counter:c|count[25] ;
-; Maximum fan-out                             ; 55                  ;
-; Total fan-out                               ; 1337                ;
-; Average fan-out                             ; 4.09                ;
-+---------------------------------------------+---------------------+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimate of Logic utilization (ALMs needed) ; 115                ;
+;                                             ;                    ;
+; Combinational ALUT usage for logic          ; 156                ;
+;     -- 7 input functions                    ; 1                  ;
+;     -- 6 input functions                    ; 68                 ;
+;     -- 5 input functions                    ; 58                 ;
+;     -- 4 input functions                    ; 18                 ;
+;     -- <=3 input functions                  ; 11                 ;
+;                                             ;                    ;
+; Dedicated logic registers                   ; 54                 ;
+;                                             ;                    ;
+; I/O pins                                    ; 19                 ;
+;                                             ;                    ;
+; Total DSP Blocks                            ; 1                  ;
+;                                             ;                    ;
+; Maximum fan-out node                        ; counter:c|count[0] ;
+; Maximum fan-out                             ; 54                 ;
+; Total fan-out                               ; 1016               ;
+; Average fan-out                             ; 4.08               ;
++---------------------------------------------+--------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -229,14 +228,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-------------+--------------+
-; |NISC4test                 ; 208 (0)             ; 80 (0)                    ; 0                 ; 1          ; 19   ; 0            ; |NISC4test                                ; NISC4test   ; work         ;
-;    |NISC:myDesign|         ; 182 (42)            ; 54 (0)                    ; 0                 ; 1          ; 0    ; 0            ; |NISC4test|NISC:myDesign                  ; NISC        ; work         ;
-;       |alu:iu|             ; 16 (16)             ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |NISC4test|NISC:myDesign|alu:iu           ; alu         ; work         ;
-;       |pc:progCounter|     ; 17 (17)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC4test|NISC:myDesign|pc:progCounter   ; pc          ; work         ;
-;       |prog:progMemory|    ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC4test|NISC:myDesign|prog:progMemory  ; prog        ; work         ;
-;       |regs:gpr|           ; 48 (48)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |NISC4test|NISC:myDesign|regs:gpr         ; regs        ; work         ;
-;       |sample_wave:wave|   ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC4test|NISC:myDesign|sample_wave:wave ; sample_wave ; work         ;
-;    |counter:c|             ; 26 (26)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |NISC4test|counter:c                      ; counter     ; work         ;
+; |NISC4test                 ; 156 (0)             ; 54 (0)                    ; 0                 ; 1          ; 19   ; 0            ; |NISC4test                                ; NISC4test   ; work         ;
+;    |NISC:myDesign|         ; 155 (40)            ; 53 (0)                    ; 0                 ; 1          ; 0    ; 0            ; |NISC4test|NISC:myDesign                  ; NISC        ; work         ;
+;       |alu:iu|             ; 8 (8)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |NISC4test|NISC:myDesign|alu:iu           ; alu         ; work         ;
+;       |pc:progCounter|     ; 11 (11)             ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC4test|NISC:myDesign|pc:progCounter   ; pc          ; work         ;
+;       |prog:progMemory|    ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC4test|NISC:myDesign|prog:progMemory  ; prog        ; work         ;
+;       |regs:gpr|           ; 49 (49)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |NISC4test|NISC:myDesign|regs:gpr         ; regs        ; work         ;
+;       |sample_wave:wave|   ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC4test|NISC:myDesign|sample_wave:wave ; sample_wave ; work         ;
+;    |counter:c|             ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC4test|counter:c                      ; counter     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -253,234 +252,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+--------------+
 
 
-+---------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                    ;
-+-----------------------------------------+---------------------------------------------+
-; Register name                           ; Reason for Removal                          ;
-+-----------------------------------------+---------------------------------------------+
-; NISC:myDesign|regs:gpr|gpr~64           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~65           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~66           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~67           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~68           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~69           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~70           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~71           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~72           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~73           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~74           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~75           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~76           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~77           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~78           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~79           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~80           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~81           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~82           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~83           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~84           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~85           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~86           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~87           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~88           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~89           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~90           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~91           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~92           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~93           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~94           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~95           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~96           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~97           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~98           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~99           ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~100          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~101          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~102          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~103          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~104          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~105          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~106          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~107          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~108          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~109          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~110          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~111          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~112          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~113          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~114          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~115          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~116          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~117          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~118          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~119          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~120          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~121          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~122          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~123          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~124          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~125          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~126          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~127          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~128          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~129          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~130          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~131          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~132          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~133          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~134          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~135          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~136          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~137          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~138          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~139          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~140          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~141          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~142          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~143          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~144          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~145          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~146          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~147          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~148          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~149          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~150          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~151          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~152          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~153          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~154          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~155          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~156          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~157          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~158          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~159          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~160          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~161          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~162          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~163          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~164          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~165          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~166          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~167          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~168          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~169          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~170          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~171          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~172          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~173          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~174          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~175          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~176          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~177          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~178          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~179          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~180          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~181          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~182          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~183          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~184          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~185          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~186          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~187          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~188          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~189          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~190          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~191          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~192          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~193          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~194          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~195          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~196          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~197          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~198          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~199          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~200          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~201          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~202          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~203          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~204          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~205          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~206          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~207          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~208          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~209          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~210          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~211          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~212          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~213          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~214          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~215          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~216          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~217          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~218          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~219          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~220          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~221          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~222          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~223          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~224          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~225          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~226          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~227          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~228          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~229          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~230          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~231          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~232          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~233          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~234          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~235          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~236          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~237          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~238          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~239          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~240          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~241          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~242          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~243          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~244          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~245          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~246          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~247          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~248          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~249          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~250          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~251          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~252          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~253          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~254          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~255          ; Lost fanout                                 ;
-; NISC:myDesign|regs:gpr|gpr~56           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~48           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~57           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~49           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~58           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~50           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~59           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~51           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~60           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~52           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~61           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~53           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~62           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~54           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~63           ; Stuck at GND due to stuck port clock_enable ;
-; NISC:myDesign|regs:gpr|gpr~55           ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 208 ;                                             ;
-+-----------------------------------------+---------------------------------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 80    ;
+; Total registers                              ; 54    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 51    ;
+; Number of registers using Clock Enable       ; 48    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -490,9 +272,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |NISC4test|NISC:myDesign|pc:progCounter|PCout[5] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |NISC4test|NISC:myDesign|alu:iu|Mux7             ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |NISC4test|NISC:myDesign|Alub[7]                 ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |NISC4test|NISC:myDesign|pc:progCounter|PCout[3] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |NISC4test|NISC:myDesign|regs:gpr|gpr            ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |NISC4test|NISC:myDesign|regs:gpr|rs_data[0]     ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |NISC4test|NISC:myDesign|Alub[0]                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 
 
@@ -501,7 +284,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+-------------------------------+
 ; Parameter Name ; Value ; Type                          ;
 +----------------+-------+-------------------------------+
-; n              ; 26    ; Signed Integer                ;
+; n              ; 1     ; Signed Integer                ;
 +----------------+-------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -521,7 +304,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------------+
 ; Parameter Name ; Value ; Type                                             ;
 +----------------+-------+--------------------------------------------------+
-; Psize          ; 6     ; Signed Integer                                   ;
+; Psize          ; 5     ; Signed Integer                                   ;
 +----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -531,8 +314,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------------------------+
 ; Parameter Name ; Value ; Type                                              ;
 +----------------+-------+---------------------------------------------------+
-; Psize          ; 6     ; Signed Integer                                    ;
-; Isize          ; 24    ; Signed Integer                                    ;
+; Psize          ; 5     ; Signed Integer                                    ;
+; Isize          ; 20    ; Signed Integer                                    ;
 +----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -573,30 +356,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 80                          ;
-;     CLR               ; 29                          ;
+; arriav_ff             ; 54                          ;
+;     CLR               ; 6                           ;
 ;     ENA               ; 48                          ;
-;     ENA CLR           ; 3                           ;
-; arriav_lcell_comb     ; 208                         ;
-;     arith             ; 39                          ;
-;         1 data inputs ; 24                          ;
-;         2 data inputs ; 1                           ;
+; arriav_lcell_comb     ; 156                         ;
+;     arith             ; 13                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 3                           ;
-;         5 data inputs ; 11                          ;
-;     extend            ; 23                          ;
-;         7 data inputs ; 23                          ;
-;     normal            ; 146                         ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 142                         ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 20                          ;
-;         5 data inputs ; 46                          ;
-;         6 data inputs ; 72                          ;
+;         4 data inputs ; 15                          ;
+;         5 data inputs ; 58                          ;
+;         6 data inputs ; 68                          ;
 ; arriav_mac            ; 1                           ;
 ; boundary_port         ; 19                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.10                        ;
-; Average LUT depth     ; 5.81                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.87                        ;
 +-----------------------+-----------------------------+
 
 
@@ -605,7 +384,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -615,7 +394,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Apr 21 01:39:37 2025
+    Info: Processing started: Tue Apr 22 08:12:43 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NISC -c NISC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -640,45 +419,44 @@ Info (12021): Found 1 design units, including 1 entities, in source file nisc.sv
     Info (12023): Found entity 1: NISC File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file nisc4test.sv
     Info (12023): Found entity 1: NISC4test File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC4test.sv Line: 2
-Warning (10222): Verilog HDL Parameter Declaration warning at NISC.sv(30): Parameter Declaration in module "NISC" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 30
-Warning (10222): Verilog HDL Parameter Declaration warning at NISC.sv(35): Parameter Declaration in module "NISC" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at NISC.sv(59): created implicit net for "Wdata_select" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 59
+Warning (10222): Verilog HDL Parameter Declaration warning at NISC.sv(29): Parameter Declaration in module "NISC" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 29
+Warning (10222): Verilog HDL Parameter Declaration warning at NISC.sv(34): Parameter Declaration in module "NISC" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 34
 Info (12127): Elaborating entity "NISC4test" for the top level hierarchy
 Info (12128): Elaborating entity "counter" for hierarchy "counter:c" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC4test.sv Line: 11
-Warning (10230): Verilog HDL assignment warning at counter.sv(11): truncated value with size 32 to match size of target (26) File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/counter.sv Line: 11
+Warning (10230): Verilog HDL assignment warning at counter.sv(11): truncated value with size 32 to match size of target (1) File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/counter.sv Line: 11
 Info (12128): Elaborating entity "NISC" for hierarchy "NISC:myDesign" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC4test.sv Line: 16
-Warning (10230): Verilog HDL assignment warning at NISC.sv(81): truncated value with size 32 to match size of target (8) File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 81
-Info (12128): Elaborating entity "pc" for hierarchy "NISC:myDesign|pc:progCounter" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 48
-Info (12128): Elaborating entity "prog" for hierarchy "NISC:myDesign|prog:progMemory" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 51
-Warning (10850): Verilog HDL warning at prog.sv(16): number of words (23) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/prog.sv Line: 16
-Warning (10230): Verilog HDL assignment warning at prog.sv(20): truncated value with size 25 to match size of target (24) File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/prog.sv Line: 20
+Warning (10230): Verilog HDL assignment warning at NISC.sv(82): truncated value with size 32 to match size of target (8) File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 82
+Info (12128): Elaborating entity "pc" for hierarchy "NISC:myDesign|pc:progCounter" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 47
+Info (12128): Elaborating entity "prog" for hierarchy "NISC:myDesign|prog:progMemory" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 50
+Warning (10850): Verilog HDL warning at prog.sv(16): number of words (22) in memory file does not match the number of elements in the address range [0:31] File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/prog.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at prog.sv(20): truncated value with size 21 to match size of target (20) File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/prog.sv Line: 20
 Warning (10030): Net "progMem.data_a" at prog.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/prog.sv Line: 12
 Warning (10030): Net "progMem.waddr_a" at prog.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/prog.sv Line: 12
 Warning (10030): Net "progMem.we_a" at prog.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/prog.sv Line: 12
-Info (12128): Elaborating entity "control_unit" for hierarchy "NISC:myDesign|control_unit:c" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 63
-Info (12128): Elaborating entity "regs" for hierarchy "NISC:myDesign|regs:gpr" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 69
-Info (12128): Elaborating entity "alu" for hierarchy "NISC:myDesign|alu:iu" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 73
-Info (12128): Elaborating entity "sample_wave" for hierarchy "NISC:myDesign|sample_wave:wave" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 75
+Info (12128): Elaborating entity "control_unit" for hierarchy "NISC:myDesign|control_unit:c" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 60
+Info (12128): Elaborating entity "regs" for hierarchy "NISC:myDesign|regs:gpr" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 68
+Info (12128): Elaborating entity "alu" for hierarchy "NISC:myDesign|alu:iu" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 72
+Info (12128): Elaborating entity "sample_wave" for hierarchy "NISC:myDesign|sample_wave:wave" File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/NISC.sv Line: 74
 Warning (10030): Net "wave_mem.data_a" at sample_wave.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/sample_wave.sv Line: 6
 Warning (10030): Net "wave_mem.waddr_a" at sample_wave.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/sample_wave.sv Line: 6
 Warning (10030): Net "wave_mem.we_a" at sample_wave.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/sample_wave.sv Line: 6
-Info (276014): Found 3 instances of uninferred RAM logic
+Info (276014): Found 2 instances of uninferred RAM logic
     Info (276007): RAM logic "NISC:myDesign|sample_wave:wave|wave_mem" is uninferred due to asynchronous read logic File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/sample_wave.sv Line: 6
-    Info (276007): RAM logic "NISC:myDesign|regs:gpr|gpr" is uninferred due to asynchronous read logic File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/regs.sv Line: 16
     Info (276004): RAM logic "NISC:myDesign|prog:progMemory|progMem" is uninferred due to inappropriate RAM size File: C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/prog.sv Line: 12
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/db/NISC.ram0_prog_c2549942.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/howar/Downloads/ELEC6234/gaussian/nisc_quartus/db/NISC.ram0_prog_a7f8678b.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 192 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 276 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 224 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 256 logic cells
+    Info (21061): Implemented 204 logic cells
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
     Info: Peak virtual memory: 4832 megabytes
-    Info: Processing ended: Mon Apr 21 01:39:46 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Processing ended: Tue Apr 22 08:12:54 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:08
 
 

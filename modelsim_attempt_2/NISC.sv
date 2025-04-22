@@ -17,22 +17,21 @@ module NISC #( parameter n = 8) // data bus width
 
 // declarations of local signals that connect CPU modules
 //! ALU
-logic [1:0] ALUfunc; // ALU function
+logic ALUfunc; // ALU function
 logic imm; // immediate operand signal
 logic [n-1:0] Alub; // output from imm MUX
-logic retrieve_switch, retrieve_wave;
 
 //! Registers
 logic [n-1:0] rs_data, rd_data, Wdata; // Register data
-logic w; // register write control
+logic w_or_LED; // register write control
 
 //! Program Counter 
-parameter Psize = 6; // up to 64 instructions
+parameter Psize = 5; // up to 32 instructions
 logic PCincr,PCabsbranch; //,PCrelbranch; // program counter control
 logic [Psize-1 : 0]ProgAddress;
 
 //! Program Memory
-parameter Isize = n+16; // Isize - instruction width
+parameter Isize = n+12; // Isize - instruction width
 logic [Isize-1:0] I; // I - instruction code
 logic [7:0] wave_val;
 
@@ -50,22 +49,22 @@ pc  #(.Psize(Psize)) progCounter (.clk(clk),.n_reset(n_reset),
 prog #(.Psize(Psize),.Isize(Isize)) 
         progMemory (.address(ProgAddress),.I(I));
 
-control_unit c  (.branch_condition(I[Isize-1]),
+control_unit c  (.branch_condition(I[Isize-3]),
                 .poll(poll),
-                .microinstruction(I[Isize-2:Isize-10]),
+                .microinstruction(I[Isize-1:Isize-7]),
                 .PCincr(PCincr),
                 .PCabsbranch(PCabsbranch),
                 .ALUfunc(ALUfunc),
                 .imm(imm),
-                .w(w),
-                .retrieve_switch(retrieve_switch),
-                .retrieve_wave(retrieve_wave),
-                .LED_status(LED_status));
+                .Wdata_select(Wdata_select),
+                .w_or_LED(w_or_LED));
 
-regs   #(.n(n))  gpr(.clk(clk),.w(w),
+regs   #(.n(n))  gpr(.clk(clk),.w(w_or_LED), .Wdata_select(Wdata_select),
+        .switch_val(SW[n-1:0]),
         .Wdata(Wdata),
-        .rd(I[Isize-11:Isize-13]),  // reg %d number
-        .rs(I[Isize-14:Isize-16]), // reg %s number
+        .wave_val(wave_val),
+        .rd(I[Isize-8:Isize-10]),  // reg %d number
+        .rs(I[Isize-11:Isize-13]), // reg %s number
         .rs_data(rs_data),.rd_data(rd_data));
 
 alu    #(.n(n))  iu(.a(rs_data),.b(Alub),
@@ -75,9 +74,11 @@ alu    #(.n(n))  iu(.a(rs_data),.b(Alub),
 sample_wave wave (.i(rs_data), .wave_val(wave_val));
 
 // create MUX for immediate operand
-assign Alub = (imm ? (retrieve_switch ? SW[n-1:0] :I[Isize-17:0]) : (retrieve_wave ? wave_val: rd_data ));
+// assign Alub = (imm ? (retrieve_switch ? SW[n-1:0] :I[Isize-17:0]) : (retrieve_wave ? wave_val: rd_data ));
+
+assign Alub = (imm ? (I[Isize-14] ? {1'b1, I[Isize-14:0]} : {1'b0, I[Isize-14:0]}) : rd_data);
 
 // connect ALU result to outport
-assign outport = (LED_status ? rs_data: 0 );
+assign outport = (w_or_LED ? 0: rs_data );
 
 endmodule

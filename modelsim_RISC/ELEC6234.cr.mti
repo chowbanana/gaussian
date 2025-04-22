@@ -85,26 +85,8 @@ Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 Top level modules:
 	picoMIPS4test_test
 
-} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv}
+} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alucodes.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alucodes.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
--- Compiling module counter
-
-Top level modules:
-	counter
-
-} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS4test.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS4test.sv}
-Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
--- Compiling module picoMIPS4test
-
-Top level modules:
-	picoMIPS4test
-
-} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv}
-Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
--- Compiling module cputest
-
-Top level modules:
-	cputest
 
 } {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/prog.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/prog.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
@@ -113,7 +95,25 @@ Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
 Top level modules:
 	prog
 
-} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alucodes.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/alucodes.sv}
+} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/cputest.sv}
 Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+-- Compiling module cputest
+
+Top level modules:
+	cputest
+
+} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS4test.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/picoMIPS4test.sv}
+Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+-- Compiling module picoMIPS4test
+
+Top level modules:
+	picoMIPS4test
+
+} {} {}} {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/hwxt1c20/OneDrive - University of Southampton/Documents/ELEC6234_embedded/modelsim/counter.sv}
+Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
 
 } {} {}}

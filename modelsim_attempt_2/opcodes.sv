@@ -17,7 +17,7 @@
 
 //! Using `RB (01)
 // Display on LED
-`define DISP 4'b0001
+//`define DISP 4'b0001
 
 // LDW %d, %0, imm; %d = %0 + imm
 `define LDW  4'b0101
@@ -29,7 +29,7 @@
 // ADDI %d, %s, imm ;  %d = %s + imm
 `define ADDI  4'b0110
 
-// LDI %d, %0, imm; %d = %0 + imm
+// LDI %d, %0, imm; %d = switch val
 `define LDI  4'b1010
 
 //! Using `RMUL (11)

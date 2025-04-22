@@ -4,7 +4,7 @@
 // Author: tjk, 
 // Last rev. 24 Oct 2012
 //-----------------------------------------------------
-module prog #(parameter Psize = 6, Isize = 24) // psize - address width, Isize - instruction width
+module prog #(parameter Psize = 5, Isize = 20) // psize - address width, Isize - instruction width
 (input logic [Psize-1:0] address,
 output logic [Isize-1:0] I); // I - instruction code
 

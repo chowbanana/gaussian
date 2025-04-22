@@ -1,71 +1,9 @@
-# Compile of picoMIPS.sv was successful.
-vsim work.picoMIPS4test_test
-# vsim work.picoMIPS4test_test 
-# Start time: 01:02:34 on Apr 21,2025
-# Loading sv_std.std
-# Loading work.picoMIPS4test_test
-# Loading work.picoMIPS4test
-# Loading work.counter
-# Loading work.picoMIPS
-# Loading work.pc
-# Loading work.prog
-# Loading work.control_unit
-# Loading work.regs
-# Loading work.alu
-# Loading work.sample_wave
-# Compile of NISC4test_test.sv was successful.
-# Compile of NISC4test.sv was successful.
-# Compile of NISC.sv was successful.
-# 3 compiles, 0 failed with no errors.
-vsim work.NISC4test_test
-# End time: 01:23:00 on Apr 21,2025, Elapsed time: 0:20:26
-# Errors: 0, Warnings: 7
-# vsim work.NISC4test_test 
-# Start time: 01:23:00 on Apr 21,2025
-# Loading sv_std.std
-# Loading work.NISC4test_test
-# Loading work.NISC4test
-# Loading work.counter
-# Loading work.NISC
-# Loading work.pc
-# Loading work.prog
-# Loading work.control_unit
-# Loading work.regs
-# Loading work.alu
-# Loading work.sample_wave
-add wave -position end  sim:/NISC4test_test/clk
-add wave -position end  sim:/NISC4test_test/fastclk
-add wave -position end  sim:/NISC4test_test/n_reset
-add wave -position end  sim:/NISC4test_test/poll
-add wave -position end  sim:/NISC4test_test/SW
-add wave -position end  sim:/NISC4test_test/LED
-run -all
-# ** Note: $stop    : C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test_test.sv(48)
-#    Time: 5800 ps  Iteration: 0  Instance: /NISC4test_test
-# Break in Module NISC4test_test at C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test_test.sv line 48
-# Compile of opcodes.sv was successful.
-# Compile of alu.sv was successful.
-# Compile of alucodes.sv was successful.
-# Compile of alutest.sv was successful.
-# Compile of counter.sv was successful.
-# Compile of countertest.sv was successful.
-# Compile of cputest.sv was successful.
-# Compile of pc.sv was successful.
-# Compile of pctest.sv was successful.
 # Compile of prog.sv was successful.
-# Compile of regs.sv was successful.
-# Compile of regstest.sv was successful.
-# Compile of sample_wave.sv was successful.
-# Compile of control_unit.sv was successful.
-# Compile of NISC4test_test.sv was successful.
-# Compile of NISC4test.sv was successful.
 # Compile of NISC.sv was successful.
-# 17 compiles, 0 failed with no errors.
+# 2 compiles, 0 failed with no errors.
 vsim work.NISC4test_test
-# End time: 01:26:11 on Apr 21,2025, Elapsed time: 0:03:11
-# Errors: 0, Warnings: 6
 # vsim work.NISC4test_test 
-# Start time: 01:26:11 on Apr 21,2025
+# Start time: 07:58:20 on Apr 22,2025
 # Loading sv_std.std
 # Loading work.NISC4test_test
 # Loading work.NISC4test
@@ -83,9 +21,14 @@ add wave -position end  sim:/NISC4test_test/n_reset
 add wave -position end  sim:/NISC4test_test/poll
 add wave -position end  sim:/NISC4test_test/SW
 add wave -position end  sim:/NISC4test_test/LED
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: howar  Hostname: DESKTOP-2UD3KJN  ProcessID: 34528
+#           Attempting to use alternate WLF file "./wlftqx5fht".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqx5fht
 run -all
 # ** Note: $stop    : C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test_test.sv(48)
 #    Time: 5800 ps  Iteration: 0  Instance: /NISC4test_test
 # Break in Module NISC4test_test at C:/Users/howar/Downloads/ELEC6234/gaussian/modelsim_attempt_2/NISC4test_test.sv line 48
-# End time: 01:47:13 on Apr 21,2025, Elapsed time: 0:21:02
-# Errors: 0, Warnings: 1
+# End time: 08:11:30 on Apr 22,2025, Elapsed time: 0:13:10
+# Errors: 0, Warnings: 5

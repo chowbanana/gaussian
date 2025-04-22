@@ -1,0 +1,53 @@
+# Current time Tue Apr 22 07:37:01 2025
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+# Signature = 4a3706afe29a2b87def93ebd4f2693fa
+# 0    0x7159eecb: 'operator new + 0xbd' in 'c:\windows\system32\msvcr120.dll'
+# 1    0x00f3d7a0: '<unknown (@0xf3d7a0)>'
+# 2    0x00f3e9fc: '<unknown (@0xf3e9fc)>'
+# End of Stack Trace
+
+
+# Current time Tue Apr 22 07:37:01 2025
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+# Signature = 4a3706afe29a2b87def93ebd4f2693fa
+# 0    0x012a9430: '<unknown (@0x12a9430)>'
+# 1    0x00f600a8: '<unknown (@0xf600a8)>'
+# End of Stack Trace
+
+
+# Current time Tue Apr 22 07:37:01 2025
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+# Signature = 4a3706afe29a2b87def93ebd4f2693fa
+# 0    0x012a9430: '<unknown (@0x12a9430)>'
+# 1    0x00f600a8: '<unknown (@0xf600a8)>'
+# End of Stack Trace
+
+
+# Current time Tue Apr 22 07:37:01 2025
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+# Signature = 4a3706afe29a2b87def93ebd4f2693fa
+# 0    0x012a9430: '<unknown (@0x12a9430)>'
+# 1    0x00f600a8: '<unknown (@0xf600a8)>'
+# End of Stack Trace
+
+

@@ -1,20 +1,20 @@
-Fitter Status : Successful - Mon Apr 21 01:40:21 2025
+Fitter Status : Successful - Tue Apr 22 08:13:33 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : NISC
 Top-level Entity Name : NISC4test
 Family : Cyclone V
-Device : 5CGXFC7C7F23C8
+Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 158 / 56,480 ( < 1 % )
-Total registers : 80
-Total pins : 19 / 268 ( 7 % )
+Logic utilization (in ALMs) : 116 / 32,070 ( < 1 % )
+Total registers : 54
+Total pins : 19 / 457 ( 4 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 7,024,640 ( 0 % )
-Total RAM Blocks : 0 / 686 ( 0 % )
-Total DSP Blocks : 1 / 156 ( < 1 % )
-Total HSSI RX PCSs : 0 / 6 ( 0 % )
-Total HSSI PMA RX Deserializers : 0 / 6 ( 0 % )
-Total HSSI TX PCSs : 0 / 6 ( 0 % )
-Total HSSI PMA TX Serializers : 0 / 6 ( 0 % )
-Total PLLs : 0 / 13 ( 0 % )
+Total block memory bits : 0 / 4,065,280 ( 0 % )
+Total RAM Blocks : 0 / 397 ( 0 % )
+Total DSP Blocks : 1 / 87 ( 1 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 6 ( 0 % )
 Total DLLs : 0 / 4 ( 0 % )

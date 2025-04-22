@@ -9,7 +9,7 @@
 `include "alucodes.sv"
 module alu #(parameter n =8) (
    input logic [n-1:0] a, b, // ALU operands
-   input logic [1:0] func, // ALU function code
+   input logic func, // ALU function code
    output logic [n-1:0] result // ALU result
 );
 //------------- code starts here ---------
@@ -25,12 +25,12 @@ module alu #(parameter n =8) (
 // create the ALU, use signal ar in arithmetic operations
 always_comb
 begin
-   result = a; // default
+   // result = a; // default
    case(func)
-      `RNOP: ;
+      // `RNOP: ;
 
-      `RB:
-         result = b;
+      // `RB:
+      //    result = b;
 
       `RADD:
          result = a + b;

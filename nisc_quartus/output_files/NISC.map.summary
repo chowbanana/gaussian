@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Apr 21 01:39:46 2025
+Analysis & Synthesis Status : Successful - Tue Apr 22 08:12:54 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : NISC
 Top-level Entity Name : NISC4test
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 80
+Total registers : 54
 Total pins : 19
 Total virtual pins : 0
 Total block memory bits : 0
