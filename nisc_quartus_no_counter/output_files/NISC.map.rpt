@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NISC
-Tue Apr 22 11:52:08 2025
+Wed Apr 23 11:29:40 2025
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Standard Edition
 
 
@@ -15,17 +15,18 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Standard Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
   9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |NISC
- 13. Parameter Settings for User Entity Instance: pc:progCounter
- 14. Parameter Settings for User Entity Instance: prog:progMemory
- 15. Parameter Settings for User Entity Instance: regs:gpr
- 16. Parameter Settings for User Entity Instance: alu:iu
- 17. Parameter Settings for User Entity Instance: sample_wave:wave
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |NISC
+ 14. Parameter Settings for User Entity Instance: pc:progCounter
+ 15. Parameter Settings for User Entity Instance: prog:progMemory
+ 16. Parameter Settings for User Entity Instance: regs:gpr
+ 17. Parameter Settings for User Entity Instance: alu:iu
+ 18. Parameter Settings for User Entity Instance: sample_wave:wave
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -52,7 +53,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +---------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Apr 22 11:52:08 2025              ;
+; Analysis & Synthesis Status     ; Successful - Wed Apr 23 11:29:40 2025              ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Standard Edition ;
 ; Revision Name                   ; NISC                                               ;
 ; Top-level Entity Name           ; NISC                                               ;
@@ -200,14 +201,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 119       ;
+; Estimate of Logic utilization (ALMs needed) ; 116       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 160       ;
+; Combinational ALUT usage for logic          ; 154       ;
 ;     -- 7 input functions                    ; 0         ;
 ;     -- 6 input functions                    ; 64        ;
-;     -- 5 input functions                    ; 77        ;
-;     -- 4 input functions                    ; 7         ;
-;     -- <=3 input functions                  ; 12        ;
+;     -- 5 input functions                    ; 51        ;
+;     -- 4 input functions                    ; 19        ;
+;     -- <=3 input functions                  ; 20        ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 61        ;
 ;                                             ;           ;
@@ -217,8 +218,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 61        ;
-; Total fan-out                               ; 1058      ;
-; Average fan-out                             ; 4.07      ;
+; Total fan-out                               ; 998       ;
+; Average fan-out                             ; 3.93      ;
 +---------------------------------------------+-----------+
 
 
@@ -227,13 +228,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-------------+--------------+
-; |NISC                      ; 160 (39)            ; 61 (0)                    ; 0                 ; 1          ; 19   ; 0            ; |NISC                  ; NISC        ; work         ;
+; |NISC                      ; 154 (40)            ; 61 (0)                    ; 0                 ; 1          ; 19   ; 0            ; |NISC                  ; NISC        ; work         ;
 ;    |alu:iu|                ; 8 (8)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |NISC|alu:iu           ; alu         ; work         ;
-;    |branch:b|              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC|branch:b         ; branch      ; work         ;
-;    |pc:progCounter|        ; 7 (7)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC|pc:progCounter   ; pc          ; work         ;
-;    |prog:progMemory|       ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC|prog:progMemory  ; prog        ; work         ;
-;    |regs:gpr|              ; 52 (52)             ; 56 (56)                   ; 0                 ; 0          ; 0    ; 0            ; |NISC|regs:gpr         ; regs        ; work         ;
-;    |sample_wave:wave|      ; 37 (37)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC|sample_wave:wave ; sample_wave ; work         ;
+;    |branch:b|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC|branch:b         ; branch      ; work         ;
+;    |pc:progCounter|        ; 10 (10)             ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC|pc:progCounter   ; pc          ; work         ;
+;    |prog:progMemory|       ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC|prog:progMemory  ; prog        ; work         ;
+;    |regs:gpr|              ; 43 (43)             ; 56 (56)                   ; 0                 ; 0          ; 0    ; 0            ; |NISC|regs:gpr         ; regs        ; work         ;
+;    |sample_wave:wave|      ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |NISC|sample_wave:wave ; sample_wave ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -267,6 +268,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+---------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                  ;
++--------------------+--------------------------------+----------------------------------------+
+; Register name      ; Reason for Removal             ; Registers Removed due to This Register ;
++--------------------+--------------------------------+----------------------------------------+
+; regs:gpr|gpr[7][5] ; Stuck at GND                   ; regs:gpr|gpr[7][6], regs:gpr|gpr[7][7] ;
+;                    ; due to stuck port clock_enable ;                                        ;
++--------------------+--------------------------------+----------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
@@ -274,7 +285,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 61    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 5     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 48    ;
@@ -282,16 +293,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |NISC|pc:progCounter|Rbranch[3] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |NISC|regs:gpr|gpr              ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |NISC|regs:gpr|rs_data[1]       ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |NISC|Alub[4]                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |NISC|pc:progCounter|PCout[4] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |NISC|pc:progCounter|PCout[0] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |NISC|regs:gpr|gpr            ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |NISC|regs:gpr|Mux6           ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |NISC|Alub[2]                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -362,24 +374,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 61                          ;
-;     CLR SLD           ; 5                           ;
+;     CLR               ; 5                           ;
 ;     ENA               ; 48                          ;
 ;     SLD               ; 8                           ;
-; arriav_lcell_comb     ; 160                         ;
+; arriav_lcell_comb     ; 154                         ;
 ;     arith             ; 13                          ;
-;         2 data inputs ; 8                           ;
-;         5 data inputs ; 5                           ;
-;     normal            ; 147                         ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 3                           ;
-;         4 data inputs ; 7                           ;
-;         5 data inputs ; 72                          ;
+;         1 data inputs ; 3                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 3                           ;
+;         5 data inputs ; 6                           ;
+;     normal            ; 141                         ;
+;         3 data inputs ; 16                          ;
+;         4 data inputs ; 16                          ;
+;         5 data inputs ; 45                          ;
 ;         6 data inputs ; 64                          ;
 ; arriav_mac            ; 1                           ;
 ; boundary_port         ; 19                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.70                        ;
-; Average LUT depth     ; 5.06                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.63                        ;
 +-----------------------+-----------------------------+
 
 
@@ -398,7 +411,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Standard Edition
-    Info: Processing started: Tue Apr 22 11:52:01 2025
+    Info: Processing started: Wed Apr 23 11:29:34 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NISC -c NISC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -419,25 +432,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
     Info (12023): Found entity 1: NISC File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file /users/hwxt1c20/downloads/gaussian/nisc_quartus/pc.sv
     Info (12023): Found entity 1: pc File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/pc.sv Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at NISC.sv(63): created implicit net for "Wdata_select" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 63
+Warning (10236): Verilog HDL Implicit Net warning at NISC.sv(57): created implicit net for "led_status" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at NISC.sv(61): created implicit net for "Wdata_select" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 61
 Warning (10222): Verilog HDL Parameter Declaration warning at NISC.sv(29): Parameter Declaration in module "NISC" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 29
 Warning (10222): Verilog HDL Parameter Declaration warning at NISC.sv(34): Parameter Declaration in module "NISC" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 34
 Info (12127): Elaborating entity "NISC" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at NISC.sv(86): truncated value with size 32 to match size of target (8) File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 86
-Info (12128): Elaborating entity "pc" for hierarchy "pc:progCounter" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 48
-Info (12128): Elaborating entity "branch" for hierarchy "branch:b" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 50
-Info (12128): Elaborating entity "prog" for hierarchy "prog:progMemory" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 53
+Warning (10230): Verilog HDL assignment warning at NISC.sv(84): truncated value with size 32 to match size of target (8) File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 84
+Info (12128): Elaborating entity "pc" for hierarchy "pc:progCounter" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 46
+Info (12128): Elaborating entity "branch" for hierarchy "branch:b" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 48
+Info (12128): Elaborating entity "prog" for hierarchy "prog:progMemory" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 51
 Warning (10850): Verilog HDL warning at prog.sv(16): number of words (22) in memory file does not match the number of elements in the address range [0:31] File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/prog.sv Line: 16
 Warning (10230): Verilog HDL assignment warning at prog.sv(20): truncated value with size 21 to match size of target (20) File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/prog.sv Line: 20
 Warning (10030): Net "progMem.data_a" at prog.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/prog.sv Line: 12
 Warning (10030): Net "progMem.waddr_a" at prog.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/prog.sv Line: 12
 Warning (10030): Net "progMem.we_a" at prog.sv(12) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/prog.sv Line: 12
-Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:c" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 64
-Info (12128): Elaborating entity "regs" for hierarchy "regs:gpr" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 72
-Warning (10027): Verilog HDL or VHDL warning at the regs.sv(37): index expression is not wide enough to address all of the elements in the array File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/regs.sv Line: 37
-Warning (10027): Verilog HDL or VHDL warning at the regs.sv(42): index expression is not wide enough to address all of the elements in the array File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/regs.sv Line: 42
-Info (12128): Elaborating entity "alu" for hierarchy "alu:iu" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 76
-Info (12128): Elaborating entity "sample_wave" for hierarchy "sample_wave:wave" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 78
+Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:c" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 62
+Info (12128): Elaborating entity "regs" for hierarchy "regs:gpr" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 70
+Info (12128): Elaborating entity "alu" for hierarchy "alu:iu" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 74
+Info (12128): Elaborating entity "sample_wave" for hierarchy "sample_wave:wave" File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/NISC.sv Line: 76
 Warning (10030): Net "wave_mem.data_a" at sample_wave.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/sample_wave.sv Line: 6
 Warning (10030): Net "wave_mem.waddr_a" at sample_wave.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/sample_wave.sv Line: 6
 Warning (10030): Net "wave_mem.we_a" at sample_wave.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/hwxt1c20/Downloads/gaussian/nisc_quartus/sample_wave.sv Line: 6
@@ -448,15 +460,15 @@ Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File 
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 236 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 230 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 216 logic cells
+    Info (21061): Implemented 210 logic cells
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
     Info: Peak virtual memory: 4900 megabytes
-    Info: Processing ended: Tue Apr 22 11:52:08 2025
-    Info: Elapsed time: 00:00:07
+    Info: Processing ended: Wed Apr 23 11:29:40 2025
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:12
 
 

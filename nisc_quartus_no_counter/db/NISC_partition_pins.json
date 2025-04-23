@@ -44,11 +44,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "n_reset",
+					"name" : "poll",
 					"strict" : false
 				},
 				{
-					"name" : "poll",
+					"name" : "n_reset",
 					"strict" : false
 				},
 				{

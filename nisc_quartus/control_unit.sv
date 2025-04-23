@@ -8,13 +8,15 @@ module control_unit(
     input logic [6:0] microinstruction,
     //! output signals
     //    PC control
-    output logic PCincr,PCabsbranch,
+    output logic PCincr,
+    //    PC control
+    output logic led_status,
     //    ALU control
     output logic ALUfunc, 
     // imm value
     output logic imm,
     //   register file control
-    output logic w_or_LED,
+    output logic w,
     //   Wdata_select
     output logic Wdata_select,
     //   Wdata_select
@@ -24,10 +26,10 @@ module control_unit(
 always_comb
 begin
     PCincr = microinstruction[6];
-    PCabsbranch = microinstruction[5];
+    led_status = microinstruction[5];
     imm = microinstruction[4];
     Wdata_select = microinstruction[3];
-    w_or_LED = microinstruction[2];
+    w = microinstruction[2];
     ALUfunc = microinstruction[1];
     is_branch = microinstruction[0];
 

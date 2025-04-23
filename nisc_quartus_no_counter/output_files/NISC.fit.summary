@@ -1,11 +1,11 @@
-Fitter Status : Successful - Tue Apr 22 11:53:08 2025
+Fitter Status : Successful - Wed Apr 23 11:30:39 2025
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Standard Edition
 Revision Name : NISC
 Top-level Entity Name : NISC
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 116 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 108 / 32,070 ( < 1 % )
 Total registers : 75
 Total pins : 19 / 457 ( 4 % )
 Total virtual pins : 0
